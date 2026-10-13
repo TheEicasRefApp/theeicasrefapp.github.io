@@ -8,9 +8,11 @@ font:17px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif
 main{max-width:1040px;margin:0 auto;padding:24px 16px 64px}
 nav{font-size:15px;margin-bottom:24px}nav a{color:var(--accent);margin-right:16px;text-decoration:none}
 .hero{text-align:center;padding:32px 0 24px}.hero img{width:120px;height:120px;border-radius:26px}
-.hero h1{font-size:40px;margin:12px 0 0;letter-spacing:.5px}.hero .sub{color:var(--accent);font-size:20px;margin:4px 0 12px}
+.hero h1{font-size:40px;margin:12px 0 0;letter-spacing:.5px}.hero .sub{color:var(--accent);font-size:20px;margin:4px auto 12px}
 .hero p{max-width:640px;margin:0 auto 8px}.muted{color:var(--muted)}
-.video{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:40px;text-align:center;margin:16px 0 40px}
+.video{text-align:center;margin:16px 0 40px}
+.video iframe{width:min(360px,100%);aspect-ratio:9/16;border:0;border-radius:14px;background:#000}
+.video p{margin:6px 0 0;font-size:15px}
 .feature{display:flex;gap:32px;align-items:center;background:var(--panel);border-radius:14px;padding:24px;margin:0 0 20px}
 .feature:nth-of-type(even){flex-direction:row-reverse}
 .feature img{width:46%;border-radius:10px;border:1px solid var(--line)}
@@ -24,7 +26,10 @@ a{color:var(--accent)}
 <div class="hero"><img src="images/app-icon.png" alt="EICAS Ref app icon">
 <h1>EICAS Ref</h1><p class="sub">Your manuals, cross-referenced</p>
 <p>Everything your own manuals say about an EICAS message, on one page: the QRH checklist, MEL dispatch conditions, CDL items, PI-QRH performance and the FCOM system description. Cross-referenced and offline on iPad, iPhone and Mac.</p><p class="muted">iPad · iPhone · Mac</p></div>
-<div class="video muted">Promo video (when ready)</div>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/NUTXL9MR3xw?rel=0"
+title="EICAS Ref promo video" allow="encrypted-media; picture-in-picture; fullscreen"
+allowfullscreen loading="lazy"></iframe>
+<p class="muted"><a href="https://youtube.com/shorts/NUTXL9MR3xw">Watch on YouTube</a></p></div>
 <section class="feature"><img src="images/01-main.jpg" alt="Every EICAS message, one search"><div><h2>Every EICAS message, one search</h2><p>Search by EICAS message, MEL or CDL number, or checklist title. Favourites and recent searches stay one tap away.</p></div></section>
 <section class="feature"><img src="images/02-spoilers.jpg" alt="Each message with its QRH and MEL"><div><h2>Each message with its QRH and MEL</h2><p>Condition, objective, notes, cautions and warnings from your QRH, with the linked MEL items and their dispatch conditions on the same page.</p></div></section>
 <section class="feature"><img src="images/03-qrh-checklist.jpg" alt="The non-normal checklist from your own QRH"><div><h2>The non-normal checklist from your own QRH</h2><p>Open the checklist straight from the message. It is cut from your QRH from its heading to its end marker, across every page it runs to.</p></div></section>
